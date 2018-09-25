@@ -59,6 +59,10 @@ a {
   padding-bottom: 1px;
   border-bottom: 2px solid $color-primary-link-underline;
   transition: 0.5s;
+  svg{
+    transition: 0.5s;
+    color: $color-primary-link-underline;
+  }
 }
 
 a:hover {
@@ -66,7 +70,12 @@ a:hover {
   text-decoration: none;
   border-bottom: 2px solid $color-primary-link-hover;
   // transition: 0.5s;
+  svg{
+    color: $color-primary-link-hover;
+  }
 }
+
+
 
 /*
    Footnotes
