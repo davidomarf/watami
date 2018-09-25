@@ -65,34 +65,30 @@ Tables can be generated easilly with [Markdown Table Generator](https://www.tabl
 | Supplies products      	| Supplies labor           	|
 | Usually larger in size 	| Usually larger in number 	|
 
-A suburb is a *relatively small* and structured community. It is adjacent to, and depended upon a large central city.
+### Code Syntax
 
-The two defining characteristics that provide the *suburban* status are:
+```d
+void main()
+{
+    import std.stdio, std.string, std.algorithm, std.conv;
 
-- **Ecological position**
-    - Further than urban neighborhood. Closer than rural neighborhood.
-    - Remain dependent of central city as source of goods and services.
-- **Commuting**
-    - Are adjacent to urban centers, but provide jobs for their own and close residents.
-
-When a city is just born, it'll, most of the times, have one small city center in which all economic activities take place.
-
-As the city grows, various activities start to take place outside the core. That's the first threshold. The one that marks the appearance of roads, as some communication between periphery and center is needed.
-
-Once a road appear between suburb `S[0]` and city center `C`, the commuting time decreases, allowing more people to live in `S[0]`.
-
-When enough people lives in `S[0]`, economic activities start to appear around. 
-
-If you repeat the proccess to suburbs `S[1]`, `S[2]` ... `S[n]` you start to have multiple activity clusters other than the city center. **Activity clusters that need connections between them**.
-
-And that necessity can only be satisfied with the building of secondary roads.
+    // Reduce the RPN expression using a stack
+    readln.split.fold!((stack, op)
+    {
+        switch (op)
+        {
+            // Generate operator switch cases statically
+            static foreach (c; "+-*/")
+                case [c]:
+                    return stack[0 .. $ - 2] ~
+                        mixin("stack[$ - 2] " ~ c ~
+                            " stack[$ - 1]");
+            default: return stack ~ op.to!real;
+        }
+    })((real[]).init).writeln;
+}
+```
 
 ## References
 
 [^Hercules]: Hercules, H. Philoctetes, P. (231 B.C). *One last hope.* Mount Olympus. 
-
-[^Troy]:  Troy, P. N. (2004). *The structure and form of the Australian city: Prospects for improved urban planning.* Brisbane: Urban Policy Program, Griffith University.
-
-[^McLaren]: [<i class="fa fa-link" aria-hidden="true"></i>](https://mitpress.mit.edu/books/sharing-cities){: target="_blank"} McLaren, D., & Agyeman, J. (2017). *Sharing cities: A case for truly smart and sustainable cities.* Cambridge: MIT Press.
-
-[^Reissman]: Reissman, L. (1964). *The urban process: Cities in industrial societies.* New York: Free Press of Glencoe.

@@ -5,11 +5,22 @@ $header-font-family: "Rubik", Georgia;
 $body-font-size: 16px;
 $prose-font-size: 22px;
 $footnotes-font-size: $prose-font-size * .8;
-
+$monospace: Georgia;
 
 // Type scale
 $h0-mobile: 48px;
 $h0-desktop: 75px;
+
+/* type scale */
+$type-size-1                    : 2.441em !default; // ~39.056px
+$type-size-2                    : 1.953em !default; // ~31.248px
+$type-size-3                    : 1.563em !default; // ~25.008px
+$type-size-4                    : 1.25em !default; // ~20px
+$type-size-5                    : 1em !default; // ~16px
+$type-size-6                    : 0.75em !default; // ~12px
+$type-size-7                    : 0.6875em !default; // ~11px
+$type-size-8                    : 0.625em !default; // ~10px
+
 
 $h1-size: 40px !default;
 $h2-size: 32px !default;
@@ -32,6 +43,34 @@ $spacer-1: $spacer !default; // 8px
 $spacer-2: ($spacer * 2) !default; // 16px
 $spacer-3: ($spacer * 4) !default; // 32px
 $spacer-4: ($spacer * 8) !default; // 64px
+
+
+/* syntax highlighting (base16) */
+$base00                         : #f3f3f3 !default;
+$base01                         : #d0d0d0 !default;
+$base02                         : rgba(176, 176, 176, 0.13) !default;
+$base03                         : #949494 !default;
+$base04                         : #9e9d9d !default;
+$base05                         : #4d4d4c !default;
+$base06                         : #262626 !default;
+$base07                         : #c5c8c6 !default;
+$base08                         : #8959a8 !default;
+$base09                         : #d75f00 !default;
+$base0a                         : #4271ae !default;
+$base0b                         : #718c00 !default;
+$base0c                         : #3e999f !default;
+$base0d                         : #005f87 !default;
+$base0e                         : rgb(192, 54, 123) !default;
+$base0f                         : #df0000 !default;
+
+
+/*
+   Other
+   ========================================================================== */
+
+   $border-radius                  : 0px !default;
+
+
 
 /* rubik-900 - latin */
 @font-face {
