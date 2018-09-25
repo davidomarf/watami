@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Watami Jekyll Theme
 description: A beginner's approach to a minimalistic content-focused jekyll theme
-# baseurl: "/watami" # the subpath of your site, e.g. /blog
-url: "http://davidomarf.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://watami.davidomar.me" # the base hostname & protocol for your site
 github_repo: watami # the GitHub repo name for your project
 github_username: davidomarf
 
