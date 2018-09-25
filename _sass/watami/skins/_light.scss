@@ -18,12 +18,3 @@ $color-nav-link: $black !default;
 $color-primary-link: $black !default;
 $color-primary-underline: $gray !default;
 $color-border: $gray-light !default;
-
-
-// Import sass partials (used in all themes)
-@import
-        "variables",
-        "base",
-        "components",
-        "utilities"
-;
