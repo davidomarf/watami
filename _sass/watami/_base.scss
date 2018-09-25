@@ -17,7 +17,7 @@ button {
 
 
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
+p, blockquote, pre, 
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
@@ -57,11 +57,60 @@ a {
   color: $color-primary-link-hover;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid $color-primary-link-underline;
+  border-bottom: 2px solid $color-primary-link-underline;
+  transition: 0.5s;
 }
 
 a:hover {
   color: $color-primary-link-hover;
   text-decoration: none;
-  border-bottom: 1px solid $color-primary-link-hover;
+  border-bottom: 2px solid $color-primary-link-hover;
+  // transition: 0.5s;
+}
+
+/*
+   Footnotes
+   ========================================================================== */
+
+  .footnote {
+  color: mix(#fff, $gray, 25%);
+  text-decoration: none;
+  border-bottom: none;
+  font-size: $footnotes-font-size;
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+.footnotes {
+  color: mix(#fff, $gray, 25%);
+  
+  ol,
+  li,
+  p {
+    // margin-bottom: 0;
+    margin: 30px 0;
+    font-size: $footnotes-font-size;
+  }
+}
+
+a.reversefootnote {
+  color: $gray;
+  text-decoration: none;
+  border-bottom: none;
+  &:hover {
+    text-decoration: underline;
+    border-bottom: none;
+  }
+}
+
+.anchorjs-link {
+  transition: all .25s linear;
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
 }

@@ -31,3 +31,6 @@ theme_color: watami
 
 # Build settings
 markdown: kramdown
+
+# Permalinks
+permalink: /:title
