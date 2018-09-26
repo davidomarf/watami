@@ -1,0 +1,28 @@
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
+{% assign alignment = page.title.alignment  %}
+
+<article class="container mx-auto px-2" itemscope itemtype="http://schema.org/BlogPosting">
+  <{{ alignment | default: "center" }}>
+  <div class="mt-4 mb-2 clearfix header-text">
+
+      <div class="clearfix mt-4 ">
+          <p class="h4 lh-condensed">
+            written by <a href = "{{author.url}}" target = "_blank">{{ author.name }}</a>
+            /
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b, %Y" }}</time>
+          </p>
+        </div>
+
+    <h1 class="h0 inline-block mt-2 mb-2 header-title">{{ page.title | upcase }}</h1>
+    
+    {% if page.subtitle %}
+      <div class="mt-2 mb-3 clearfix">
+        <p class="h4 ">{{ page.subtitle }}</p>
+      </div>
+    {% endif %}
+
+    <div class="col-3 sm-width-full border-top-thick"></div>
+
+  </div>
+  
+  </{{ alignment | default: "center" }}>
