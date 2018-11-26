@@ -47,23 +47,39 @@ $spacer-4: ($spacer * 8) !default; // 64px
 
 
 /* syntax highlighting (base16) */
-$base00                         : #f3f3f3 !default;
-$base01                         : #d0d0d0 !default;
-$base02                         : rgba(176, 176, 176, 0.13) !default;
-$base03                         : #949494 !default;
+// $base00                         : #f3f3f3 !default;
+// $base01                         : #d0d0d0 !default;
+// $base02                         : rgba(176, 176, 176, 0.13) !default;
+// $base03                         : #949494 !default;
+// $base04                         : #9e9d9d !default;
+// $base05                         : #4d4d4c !default;
+// $base06                         : #262626 !default;
+// $base07                         : #c5c8c6 !default;
+// $base08                         : #8959a8 !default;
+// $base09                         : #d75f00 !default;
+// $base0a                         : #4271ae !default;
+// $base0b                         : #718c00 !default;
+// $base0c                         : #3e999f !default;
+// $base0d                         : #005f87 !default;
+// $base0e                         : rgb(192, 54, 123) !default;
+// $base0f                         : #df0000 !default;
+
+$base00                         : #242938 !default;
+$base01                         : rgba($base00, 0.8) !default;
+$base02                         : #00000050 !default;
+$base03                         : #506477 !default;
 $base04                         : #9e9d9d !default;
-$base05                         : #4d4d4c !default;
+$base05                         : #7390aa !default;
 $base06                         : #262626 !default;
 $base07                         : #c5c8c6 !default;
-$base08                         : #8959a8 !default;
-$base09                         : #d75f00 !default;
-$base0a                         : #4271ae !default;
-$base0b                         : #718c00 !default;
-$base0c                         : #3e999f !default;
-$base0d                         : #005f87 !default;
-$base0e                         : rgb(192, 54, 123) !default;
+$base08                         : #add7ff !default;
+$base09                         : #27E8A7 !default;
+$base0a                         : #e4f0fb !default;
+$base0b                         : #53beb2 !default;
+$base0c                         : #32AE85 !default;
+$base0d                         : #e4f0fb !default;
+$base0e                         : #32AE85 !default;
 $base0f                         : #df0000 !default;
-
 
 /*
    Other

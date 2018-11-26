@@ -2,11 +2,11 @@
 
 // Color Palette
 
-$green: rgb(65,195,172);
+$green: darken(#27e8a7, 15%);
 $orange: rgb(255,107,87);
 $red: rgb(237,78,110);
-$yellow: rgb(255,170,51);
-$blue: #038793;
+$yellow: rgb(240, 146, 15);
+$blue: rgb(3,135,147);
 
 // Color variables
 $black: #2B2826;
@@ -17,16 +17,18 @@ $white: #fff;
 $burgundy: #B54545;
 
 // Config
-$color-background: $white !default;
+$color-background: #EEEEEE !default;
 $color-foreground: $black !default;
 $color-title: $black !default;
 $color-body-text: $black !default;
 $color-text-accent: $gray-dark !default;
 $color-code: $gray-dark !default;
 $color-nav-link: $black !default;
-$color-primary-link: $red !default;
+$color-primary-link: $green !default;
 $color-primary-link-underline: rgba($color-primary-link, .3) !default;
 $color-primary-link-hover: $color-primary-link !default;
 $color-primary-underline: $gray !default;
 $color-border: $gray-light !default;
 $code-background-color: #fafafa !default;
+$color-selection-background: rgba(215,213,209,0.99);
+$color-selection-font: $color-body-text;

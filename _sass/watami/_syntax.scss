@@ -18,6 +18,12 @@ figure.highlight {
     margin: 0;
     padding: 1em;
   }
+::-moz-selection {
+  background: $base02; 
+  }
+::selection {
+  background: $base02;
+  }
 }
 
 .highlight table {
@@ -317,6 +323,10 @@ figure.highlight {
   .il {
     /* Literal.Number.Integer.Long */
     color: $base09;
+  }
+  .lineno{
+    /* Line Numbers */
+    color:#3a3f58;
   }
 }
 
