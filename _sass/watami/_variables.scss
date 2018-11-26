@@ -3,13 +3,14 @@
 $body-font-family: "Work Sans", Athelas, Palatino, Georgia, serif;
 $header-font-family: "Rubik", Georgia;
 $body-font-size: 16px;
-$prose-font-size: 22px;
+$prose-font-size: 20px;
 $footnotes-font-size: $prose-font-size * .8;
-$monospace: Georgia;
+$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+
 
 // Type scale
 $h0-mobile: 48px;
-$h0-desktop: 75px;
+$h0-desktop: 60px;
 
 /* type scale */
 $type-size-1                    : 2.441em !default; // ~39.056px
@@ -70,7 +71,7 @@ $base0f                         : #df0000 !default;
 
    $border-radius                  : 0px !default;
 
-
+  
 
 /* rubik-900 - latin */
 @font-face {
