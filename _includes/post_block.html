@@ -1,9 +1,12 @@
 <!-- Renders post date, title, and snippet of text. -->
 
 <div class=" prose">
-  <h2 class="h1 lh-condensed col-9 mb-0">
-    <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </h2>
+  <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">
+    <h2 class="h1 lh-condensed col-9 mb-0">
+      {{ post.title }}
+    </h2>
+    <div class="catalogue-line"></div>
+  </a>
   <a class="no-underline-hover h5 block py-1 mb-1" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
   <p>{{ post.excerpt | default: post.content | strip_html | truncatewords:50 }}</p>
 </div>

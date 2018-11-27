@@ -31,14 +31,26 @@
 .link-primary {
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 2px solid currentColor;
+  border-bottom: none;
   padding-bottom: 1px;
-  
+  color: rgba($color-primary-link, 0.7);
+  transition: 0.5s;
   &:hover {
     color: $color-primary-link;
     text-decoration: none;
-    border-bottom: 2px dotted;
+    border-bottom: none;
   }
+  &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 7rem;
+    }
+}
+
+.catalogue-line {
+  @include transition(all .3s ease-out);
+  border-top: .2rem solid;
+  display: block;
+  width: 2rem;
 }
 
 .bold { font-weight: bold; }

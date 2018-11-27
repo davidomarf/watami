@@ -63,6 +63,20 @@ a {
     transition: 0.5s;
     color: $color-primary-link-underline;
   }
+  &.nav-link{
+    border-bottom: none;
+    color: rgba($color-body-text, 60%);
+    svg{
+      color: rgba($color-body-text, 60%);
+    }
+    &:hover{
+      border-bottom: none;
+      color: $color-body-text;
+      svg{
+        color: $color-body-text;
+      }
+    }
+  }
 }
 
 a:hover {
@@ -131,8 +145,14 @@ a.reversefootnote {
   background: $color-selection-background; /* Gecko Browsers */
 }
 
-div.sticky {
+.sticky {
   position: -webkit-sticky !important; /* Safari */
   position: sticky !important;
   top: 0 !important;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+          transition: $args;
 }
