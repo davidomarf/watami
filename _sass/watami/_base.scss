@@ -126,11 +126,9 @@ a.reversefootnote {
 
 ::selection {
   background: $color-selection-background; /* WebKit/Blink Browsers */
-  // color: $color-selection-font;
 }
 ::-moz-selection {
   background: $color-selection-background; /* Gecko Browsers */
-  // color: $color-selection-font;
 }
 
 div.sticky {

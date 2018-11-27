@@ -46,7 +46,7 @@ $border-radius: 0px !default;
 
 $base00 : #242938 !default;                         // Default Background
 $base01 : #7390aa !default;                         // Lighter Background (not used. Set "just in case")
-$base02 : rgba(#000000, 20%) !default;              // Selection Background (uses transparency)
+$base02 : rgba(#1D212D, .99) !default;              // Selection Background (uses transparency)
 $base03 : #506477 !default;                         // Used for comments
 $base04 : #3a3f58 !default;                         // Used for line-numbers
 $base05 : #7390aa !default;                         // Default font-color, caret, delimiters, operators
