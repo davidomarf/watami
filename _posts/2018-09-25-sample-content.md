@@ -59,7 +59,7 @@ So you say you know how to cite external texts? Great! Look at me! I'm a flagran
 
 ### Tables
 
-Tables can be generated easilly with [Markdown Table Generator <i class="fas fa-external-link-alt fa-xs"></i>](https://www.tablesgenerator.com/markdown_tables){:target="_blank"}.
+Tables can be generated easilly with [Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables){:target="_blank"}.
 
 | Satellite              	| Suburb                   	|
 |------------------------	|--------------------------	|
@@ -69,47 +69,34 @@ Tables can be generated easilly with [Markdown Table Generator <i class="fas fa-
 
 ### Code Syntax
 
-Watami uses [Rouge <i class="fas fa-external-link-alt fa-xs"></i>](https://github.com/jneen/rouge){:target="_blank"} to highlight blocks of code. It supports 135+ languages.
+Watami uses [Rouge](https://github.com/jneen/rouge){:target="_blank"} to highlight blocks of code. It supports 135+ languages.
 
 This is some ruby code.
 
 ```ruby
+# This function greets you.
 class Greeter
   def initialize(name="World")
     @name = name
   end
-
+  
+=begin
+  This is where the function says hi.
+  (yes, I'm looking for excuses to write multi-line comments)
+  (in fact, without that clarification is what made it possible)
+  (this is very meta, isn't it?)
+=end
   def say_hi
     puts "Hi #{@name}!"
   end
 end
 ```
 
-Plus, you can easily change the colors of the highlighter modifying _variables.scss, since it uses [base16 <i class="fas fa-external-link-alt fa-xs"></i>](http://chriskempson.com/projects/base16/){:target="_blank"} to assign colors.
-
-```scss
-/* syntax highlighting (base16) */
-$base00: #f3f3f3 !default;
-$base01: #d0d0d0 !default;
-$base02: rgba(176, 176, 176, 0.13) !default;
-$base03: #949494 !default;
-$base04: #9e9d9d !default;
-$base05: #4d4d4c !default;
-$base06: #262626 !default;
-$base07: #c5c8c6 !default;
-$base08: #8959a8 !default;
-$base09: #d75f00 !default;
-$base0a: #4271ae !default;
-$base0b: #718c00 !default;
-$base0c: #3e999f !default;
-$base0d: #005f87 !default;
-$base0e: rgb(192, 54, 123) !default;
-$base0f: #df0000 !default;
-```
+Plus, you can easily change the colors of the highlighter modifying _variables.scss, since it uses [base16](http://chriskempson.com/projects/base16/){:target="_blank"} to assign colors.
 
 ### Math
 
-Watami uses [Katex <i class="fas fa-external-link-alt fa-xs"></i>](https://katex.org/){:target="_blank"} to render mathematical notation. At the purest Donald Knuth’s gold standard.
+Watami uses [Katex](https://katex.org/){:target="_blank"} to render mathematical notation. At the purest Donald Knuth’s gold standard.
 
 <p><span id="mykatex2">...</span></p>
 
@@ -117,7 +104,7 @@ Watami uses [Katex <i class="fas fa-external-link-alt fa-xs"></i>](https://katex
 
 I have to say that I really loved how they turned out.
 
-Plus: they let your users instantly know where the page will open: [inside this page](#beautiful-links) or in a [blank page <i class="fas fa-external-link-alt fa-xs"></i>](#beautiful-links){:target="_blank"}.
+Plus: they let your users instantly know where the page will open: [inside this page](#beautiful-links) or in a [blank page](#beautiful-links){:target="_blank"}.
 
 ## References
 
