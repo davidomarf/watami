@@ -74,18 +74,24 @@ Object.entries = (object) => Object.keys(object).map(
   }
   
   const switchTheme = () => {
-    console.log("Hola putones")
-    const el = document.getElementById('theme-switcher')
-    // Check if we have a saved theme
-    const theme = loadSavedTheme()
-    const currentTheme = localStorage['currentTheme']
-    if (theme && currentTheme === NightTheme.themeName) {
-      updateTheme(LightTheme)
-      el.className = iconForTheme(LightTheme.themeName)
-    } else {
-      updateTheme(NightTheme)
-      el.className = iconForTheme(NightTheme.themeName)
-    }
+    let stylesheet = document.getElementById("style-theme").href.split("/");
+    let current = stylesheet.pop()
+    if (current == "light.css"){
+      stylesheet.push("dark.css")
+    } else { stylesheet.push("light.css")}
+    document.getElementById("style-theme").href = stylesheet.join("/")
+
+    // const el = document.getElementById('theme-switcher')
+    // // Check if we have a saved theme
+    // const theme = loadSavedTheme()
+    // const currentTheme = localStorage['currentTheme']
+    // if (theme && currentTheme === NightTheme.themeName) {
+    //   updateTheme(LightTheme)
+    //   el.className = iconForTheme(LightTheme.themeName)
+    // } else {
+    //   updateTheme(NightTheme)
+    //   el.className = iconForTheme(NightTheme.themeName)
+    // }
   }
   
   const iconForTheme = (themeName) => {
@@ -98,13 +104,13 @@ Object.entries = (object) => Object.keys(object).map(
   
   // initiate
   
-  checkForSavedTheme();
+  // checkForSavedTheme();
   
-  const el = document.getElementById('theme-switcher');
+  // const el = document.getElementById('theme-switcher');
   
-  if (window.localStorage && localStorage['currentTheme']) {
-    var iconClasses = iconForTheme(localStorage['currentTheme']);
-    el.className = iconClasses;
-  } else {
-    el.className = iconForTheme();
-  }
+  // if (window.localStorage && localStorage['currentTheme']) {
+  //   var iconClasses = iconForTheme(localStorage['currentTheme']);
+  //   el.className = iconClasses;
+  // } else {
+  //   el.className = iconForTheme();
+  // }
