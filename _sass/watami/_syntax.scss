@@ -71,7 +71,8 @@ figure.highlight {
 .highlight {
   .c {
     /* Comment */
-    color: $base04;
+    color: $base03;
+    font-style: italic;
   }
   .err {
     /* Error */
@@ -91,7 +92,7 @@ figure.highlight {
   }
   .o {
     /* Operator */
-    color: $base0c;
+    color: $base05;
   }
   .p {
     /* Punctuation */
@@ -99,19 +100,23 @@ figure.highlight {
   }
   .cm {
     /* Comment.Multiline */
-    color: $base04;
+    color: $base03;
+    font-style: italic;
   }
   .cp {
     /* Comment.Preproc */
-    color: $base04;
+    color: $base03;
+    font-style: italic;
   }
   .c1 {
     /* Comment.Single */
-    color: $base04;
+    color: $base03;
+    font-style: italic;
   }
   .cs {
     /* Comment.Special */
-    color: $base04;
+    color: $base03;
+    font-style: italic;
   }
   .gd {
     /* Generic.Deleted */
@@ -119,7 +124,6 @@ figure.highlight {
   }
   .ge {
     /* Generic.Emph */
-    font-style: italic;
   }
   .gh {
     /* Generic.Heading */
@@ -222,7 +226,7 @@ figure.highlight {
   }
   .nx {
     /* Name.Other */
-    color: $base0d;
+    color: $base08;
   }
   .py {
     /* Name.Property */
@@ -278,7 +282,7 @@ figure.highlight {
   }
   .se {
     /* Literal.String.Escape */
-    color: $base09;
+    color: $base0c;
   }
   .sh {
     /* Literal.String.Heredoc */
@@ -294,7 +298,7 @@ figure.highlight {
   }
   .sr {
     /* Literal.String.Regex */
-    color: $base0b;
+    color: $base0c;
   }
   .s1 {
     /* Literal.String.Single */
@@ -324,10 +328,10 @@ figure.highlight {
     /* Literal.Number.Integer.Long */
     color: $base09;
   }
-  .lineno{
-    /* Line Numbers */
-    color:#3a3f58;
-  }
+  // .lineno{
+  //   /* Line Numbers */
+  //   color:#3a3f58;
+  // }
 }
 
 .gist {
